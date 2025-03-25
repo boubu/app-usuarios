@@ -6,9 +6,9 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class UsuarioService {
   private usuariosSubject = new BehaviorSubject<any[]>([
-    { id: 1, nome: 'João Silva' },
-    { id: 2, nome: 'Maria Souza' },
-    { id: 3, nome: 'Carlos Oliveira' }
+    { id: 1, nome: 'Cristiano' },
+    { id: 2, nome: 'Lorenzo' },
+    { id: 3, nome: 'Genésio' }
   ]);
   
   usuarios$ = this.usuariosSubject.asObservable();
