@@ -1,0 +1,11 @@
+<h2>Editar Usuário</h2>
+<div>
+  <input type="number" [(ngModel)]="idBusca" placeholder="ID do usuário">
+  <button (click)="buscarUsuario()">Buscar</button>
+</div>
+
+<div *ngIf="usuarioEditado.id">
+  <p>ID: {{ usuarioEditado.id }}</p>
+  <input [(ngModel)]="usuarioEditado.nome">
+  <button (click)="salvarEdicao()">Salvar</button>
+</div>
